@@ -1,6 +1,8 @@
 import OverviewBenefits from '../../components/sections/OverviewBenefits';
 import OverviewExamples from '../../components/sections/OverviewExamples';
 import OverviewHero from '../../components/sections/OverviewHero';
+import OverviewOffer from '../../components/sections/OverviewOffer';
+import OverviewSocialProof from '../../components/sections/OverviewSocialProof';
 import OverviewVideo from '../../components/sections/OverviewVideo';
 
 const OverviewPage = () => {
@@ -9,7 +11,9 @@ const OverviewPage = () => {
       <OverviewHero />
       <OverviewVideo />
       <OverviewExamples />
-      <OverviewBenefits/>
+      <OverviewBenefits />
+      <OverviewSocialProof />
+      <OverviewOffer />
     </main>
   );
 };
