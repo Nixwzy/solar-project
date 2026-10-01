@@ -7,7 +7,14 @@ import OverviewVideo from '@/components/overview/Video';
 
 const OverviewPage = () => {
   return (
-    <main className="min-h-screen bg-(--dark-background) text-white">
+    <main
+      className="min-h-screen text-white"
+      style={{
+        // gradiente teste, alterar depois
+        background:
+          'linear-gradient(180deg, #000000 0%, #161441 50%, #000000 100%)',
+      }}
+    >
       <OverviewHero />
       <OverviewVideo />
       <OverviewExamples />
