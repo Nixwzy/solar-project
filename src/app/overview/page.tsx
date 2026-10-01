@@ -4,7 +4,6 @@ import OverviewHero from '@/components/overview/Hero';
 import OverviewOffer from '@/components/overview/Offer';
 import OverviewSocialProof from '@/components/overview/SocialProof';
 import OverviewVideo from '@/components/overview/Video';
-import Link from 'next/link';
 
 const OverviewPage = () => {
   return (
