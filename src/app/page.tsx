@@ -1,8 +1,8 @@
 'use client';
 
-import Header from '../components/Header';
-import Hero from '../components/Hero';
-import LandingVSL from '../components/sections/LandingVSL';
+import Header from '../components/layout/Header';
+import Hero from '../components/landing/Hero';
+import LandingVSL from '../components/landing/VSL';
 
 const Page = () => {
   return (
