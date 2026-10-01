@@ -1,34 +1,39 @@
+import Link from 'next/link';
+
 export default function Header() {
   return (
-    <header className="border-b border-black/10">
-      <nav className="mx-auto flex max-w-6xl items-center justify-between px-6 py-5">
-        <span className="text-xl font-bold">
+    <header className="border-b border-(--border) bg-(--background)">
+      <nav className="mx-auto flex max-w-7xl items-center justify-between px-6 py-5">
+        <Link
+          href="/"
+          className="text-xl font-bold tracking-tight"
+        >
           logo
-        </span>
+        </Link>
 
-        <div className="flex items-center gap-8 text-sm">
-          <a
+        <div className="flex items-center gap-8 text-sm font-medium">
+          <Link
             href="/content"
-            className="transition-opacity hover:opacity-60"
+            className="text-(--muted) transition-colors hover:text-(--foreground)"
           >
             conteúdo
-          </a>
+          </Link>
 
-          <a
+          <Link
             href="/about"
-            className="transition-opacity hover:opacity-60"
+            className="text-(--muted) transition-colors hover:text-(--foreground)"
           >
             sobre
-          </a>
+          </Link>
 
-          <a
+          <Link
             href="/overview"
-            className="rounded-full bg-black px-5 py-2.5 text-sm font-medium text-white hover:opacity-80"
+            className="rounded-full bg-(--foreground) px-5 py-2.5 text-sm font-semibold text-white transition-opacity hover:opacity-80"
           >
             quero conhecer
-          </a>
+          </Link>
         </div>
       </nav>
     </header>
-  )
+  );
 }
